@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=390">
+<meta name="robots" content="noindex, nofollow">
+<title>Coachman Caravan Mattresses · The Foam People (preview)</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:"IBM Plex Sans",sans-serif;background:#ffffff;color:#6d7175}
+a{color:#202223;text-decoration:none}a:hover{color:#207fc3}
+button{font-family:"IBM Plex Sans",sans-serif;cursor:pointer}
+</style>
+<style>html{scroll-behavior:smooth} body{background:#ffffff}</style>
+</head>
+<body>
+<template id="tpl">
+<div style="width: 390px; min-height: 100vh; margin: 0 auto; background: #ffffff; display: flex; flex-direction: column; font-family: 'IBM Plex Sans', sans-serif; color: #6d7175; font-size: 14px; line-height: 1.55; overflow: hidden">
+
+<div style="height: 30px; background: #3f7ec0; color: #ffffff; font-size: 11px; display: flex; align-items: center; justify-content: center">United Kingdom (GBP £)</div>
+<div style="height: 72px; display: flex; align-items: center; justify-content: space-between; padding: 0 16px; border-bottom: 1px solid #e8e8e8">
+<button aria-label="Menu" style="background: none; border: none; width: 44px; height: 44px; padding: 0; display: flex; align-items: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#202223" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"></path></svg></button>
+<img src="img/201a14668bdc53f909f5c19edc9f4cbe.jpg" alt="The Foam People" style="height: 48px; width: auto; display: block">
+<div style="display: flex; gap: 6px">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#202223" stroke-width="1.6"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#202223" stroke-width="1.6"><path d="M3 9h18l-2 11H5z"></path><path d="M8 9l4-6 4 6"></path></svg>
+</div>
+</div>
+<div style="height: 34px; background: #f5f5f5; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 600; color: #202223; text-transform: uppercase">Free delivery on all products</div>
+
+<div style="padding: 12px 16px 0; font-size: 11px; display: flex; gap: 6px"><a href="index.html">Caravan Brands</a><span>›</span><span style="color: #202223">Coachman</span></div>
+
+<img src="img/7342432a492509bcfbd82c8d807d2794.jpg" alt="Island bed in a Coachman caravan bedroom" style="width: 358px; height: 220px; object-fit: cover; object-position: center 55%; display: block; margin: 12px 16px 0; border-radius: 3px">
+<div style="padding: 20px 16px 0; display: flex; flex-direction: column; gap: 10px">
+<div style="font-size: 11px; font-weight: 600; letter-spacing: 0.12em; color: #207fc3; text-transform: uppercase">Caravan brand · Coachman</div>
+<h1 style="margin: 0; font-size: 25px; line-height: 1.15; font-weight: 600; color: #000000; text-transform: uppercase">Coachman caravan &amp; motorhome mattresses</h1>
+<p style="margin: 0; font-size: 14px; color: #4a4f54">Pick your Coachman model and we'll show you the mattress shape that fits its bed. Cut to size, delivered free.</p>
+<a href="#m-finder" style="margin-top: 4px; background: #232323; color: #ffffff; padding: 14px; font-size: 14px; font-weight: 600; border-radius: 3px; text-align: center">Find my model</a>
+<a href="configurator.html" style="border: 1px solid #232323; color: #232323; padding: 13px; font-size: 14px; font-weight: 600; border-radius: 3px; text-align: center">I know my shape</a>
+</div>
+
+<div style="margin: 24px 16px 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; font-size: 12px">
+<div style="background: #f5f9fc; padding: 12px; border-radius: 3px"><div style="font-weight: 600; color: #202223">Every Coachman layout</div>Island, twin, corner</div>
+<div style="background: #f5f9fc; padding: 12px; border-radius: 3px"><div style="font-weight: 600; color: #202223">Cut to your plan</div>Checked before cutting</div>
+<div style="background: #f5f9fc; padding: 12px; border-radius: 3px"><div style="font-weight: 600; color: #202223">Free UK delivery</div>Rolled and boxed</div>
+<div style="background: #f5f9fc; padding: 12px; border-radius: 3px"><div style="font-weight: 600; color: #202223">Rated Excellent</div>On Trustpilot</div>
+</div>
+
+<div id="m-finder" style="margin-top: 32px; background: #f2f2f2; padding: 32px 0 28px; display: flex; flex-direction: column; gap: 16px">
+<div style="padding: 0 16px; display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-size: 21px; font-weight: 600; color: #343434; text-transform: uppercase">Find your Coachman</h2>
+<p style="margin: 0; font-size: 13px; color: #4a4f54">Pick caravan or motorhome, then your range.</p>
+</div>
+<div style="margin: 0 16px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); background: #ffffff; padding: 4px; gap: 4px; border-radius: 3px">
+<sc-for list="{{types}}" as="t" hint-placeholder-count="2">
+<button onClick="{{t.pick}}" style="{{t.style}}">{{t.label}}</button>
+</sc-for>
+</div>
+<div style="display: flex; gap: 8px; overflow-x: auto; padding: 0 16px">
+<sc-for list="{{ranges}}" as="r" hint-placeholder-count="4">
+<button onClick="{{r.pick}}" style="{{r.style}}">{{r.name}} · {{r.count}}</button>
+</sc-for>
+</div>
+<div style="margin: 0 16px; height: 150px; position: relative; border-radius: 3px; overflow: hidden">
+<img src="{{range.img}}" alt="{{range.name}} range" style="width: 358px; height: 150px; object-fit: cover; object-position: {{range.pos}}; display: block">
+<div style="position: absolute; left: 0; right: 0; bottom: 0; background: rgba(20,22,24,0.72); padding: 12px 16px">
+<div style="font-size: 18px; font-weight: 600; color: #ffffff; text-transform: uppercase">{{range.name}}</div>
+<div style="font-size: 12px; color: #e6e6e6">{{range.summary}}</div>
+</div>
+</div>
+<div style="display: flex; gap: 12px; overflow-x: auto; padding: 0 16px 4px">
+<sc-for list="{{models}}" as="m" hint-placeholder-count="3">
+<div style="flex: 0 0 290px; background: #ffffff; border: 1px solid #e3e3e3; border-radius: 3px; display: flex; flex-direction: column; height: 440px; box-sizing: border-box">
+<div style="height: 140px; background: #fafafa; display: flex; align-items: center; justify-content: center; padding: 12px; box-sizing: border-box; border-bottom: 1px solid #ececec"><img src="{{m.img}}" alt="{{m.name}} floor plan" style="max-width: 100%; max-height: 116px; display: block"></div>
+<div style="padding: 16px; display: flex; flex-direction: column; gap: 10px; flex-grow: 1">
+<div style="display: flex; justify-content: space-between; align-items: baseline"><div style="font-size: 17px; font-weight: 600; color: #000000; text-transform: uppercase">{{m.name}}</div><div style="font-size: 12px">{{m.berths}} berth</div></div>
+<div style="background: #f5f9fc; border-radius: 3px; padding: 10px 12px"><div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em">{{m.bed}}</div><div style="font-size: 14px; font-weight: 600; color: #202223">{{m.shape}}</div></div>
+<div style="font-size: 12px; color: #4a4f54">{{m.note}}</div>
+<div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center"><div><div style="font-size: 11px">{{m.priceLabel}}</div><div style="font-size: 16px; font-weight: 600; color: #202223">{{m.price}}</div></div>
+<a href="{{m.url}}" style="background: #232323; color: #ffffff; padding: 12px 14px; font-size: 12px; font-weight: 600; border-radius: 3px">{{m.cta}}</a></div>
+</div>
+</div>
+</sc-for>
+</div>
+<div style="margin: 0 16px; font-size: 12px; color: #4a4f54">Swipe for more layouts. Older model? <a href="#m-help" style="font-weight: 600">Send your bed plan</a>.</div>
+</div>
+
+<img src="img/c0432a305c98a0bd220421a21a0d0203.jpg" alt="Island bed in a Coachman VIP" style="width: 390px; height: 260px; object-fit: cover; display: block; margin-top: 32px">
+<div style="padding: 20px 16px 0; display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 21px; font-weight: 600; color: #000000; text-transform: uppercase; line-height: 1.2">Keep the layout. Change how it sleeps.</h2>
+<p style="margin: 0; font-size: 14px; color: #4a4f54">Coachman fixed beds usually lift on gas struts. Every shape we cut can be split in two where your frame folds.</p>
+</div>
+
+<div style="padding: 32px 16px 0; display: flex; flex-direction: column; gap: 14px">
+<h2 style="margin: 0; font-size: 21px; font-weight: 600; color: #000000; text-transform: uppercase">Choose your depth</h2>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+<div style="border: 2px solid #207fc3; background: #f5f9fc; border-radius: 3px; padding: 14px"><div style="font-size: 26px; font-weight: 600; color: #000000">4"</div><div style="font-size: 11px; font-weight: 600; color: #207fc3; text-transform: uppercase">Medium firm</div><div style="font-size: 12px">All reflex foam</div></div>
+<div style="border: 1px solid #e3e3e3; border-radius: 3px; padding: 14px"><div style="font-size: 26px; font-weight: 600; color: #000000">6"</div><div style="font-size: 11px; font-weight: 600; color: #207fc3; text-transform: uppercase">Medium</div><div style="font-size: 12px">5" reflex + 1" memory</div></div>
+<div style="border: 1px solid #e3e3e3; border-radius: 3px; padding: 14px"><div style="font-size: 26px; font-weight: 600; color: #000000">8"</div><div style="font-size: 11px; font-weight: 600; color: #207fc3; text-transform: uppercase">Medium soft</div><div style="font-size: 12px">6" reflex + 2" memory</div></div>
+<div style="border: 1px solid #e3e3e3; border-radius: 3px; padding: 14px"><div style="font-size: 26px; font-weight: 600; color: #000000">10"</div><div style="font-size: 11px; font-weight: 600; color: #207fc3; text-transform: uppercase">Medium soft</div><div style="font-size: 12px">7" reflex + 3" memory</div></div>
+</div>
+</div>
+
+<div style="margin-top: 32px; background: #f2f2f2; padding: 28px 16px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 21px; font-weight: 600; color: #343434; text-transform: uppercase">How ordering works</h2>
+<div style="background: #ffffff; padding: 16px; border-radius: 3px; display: flex; gap: 12px"><div style="flex: 0 0 32px; height: 32px; border-radius: 16px; background: #207fc3; color: #ffffff; font-weight: 600; display: flex; align-items: center; justify-content: center">1</div><div><div style="font-weight: 600; color: #202223">Pick your Coachman</div>Your model tells us the shape.</div></div>
+<div style="background: #ffffff; padding: 16px; border-radius: 3px; display: flex; gap: 12px"><div style="flex: 0 0 32px; height: 32px; border-radius: 16px; background: #207fc3; color: #ffffff; font-weight: 600; display: flex; align-items: center; justify-content: center">2</div><div><div style="font-weight: 600; color: #202223">Choose size, depth and split</div>Width band, depth, hinged or not.</div></div>
+<div style="background: #ffffff; padding: 16px; border-radius: 3px; display: flex; gap: 12px"><div style="flex: 0 0 32px; height: 32px; border-radius: 16px; background: #207fc3; color: #ffffff; font-weight: 600; display: flex; align-items: center; justify-content: center">3</div><div><div style="font-weight: 600; color: #202223">We check your plan, then cut</div>Dimensions confirmed with you first.</div></div>
+</div>
+
+<div id="m-help" style="padding: 32px 16px 0; display: flex; flex-direction: column">
+<h2 style="margin: 0 0 12px; font-size: 21px; font-weight: 600; color: #000000; text-transform: uppercase">Coachman questions</h2>
+<sc-for list="{{faqs}}" as="f" hint-placeholder-count="5">
+<div style="border-bottom: 1px solid #e3e3e3">
+<button onClick="{{f.toggle}}" style="width: 100%; min-height: 52px; background: none; border: none; padding: 12px 0; display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 14px; font-weight: 600; color: #202223; text-align: left">{{f.q}}<span style="font-size: 20px; color: #207fc3">{{f.sign}}</span></button>
+<sc-if value="{{f.open}}" hint-placeholder-val="{{false}}"><div style="padding: 0 0 14px; font-size: 13px; color: #4a4f54">{{f.a}}</div></sc-if>
+</div>
+</sc-for>
+</div>
+
+<div style="padding: 32px 16px 0; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 17px; font-weight: 600; color: #000000; text-transform: uppercase">Shop by caravan brand</h2>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+<a href="index.html" style="height: 48px; display: flex; align-items: center; justify-content: center; background: #207fc3; color: #ffffff; font-weight: 600; border-radius: 3px">Coachman</a>
+<a href="index.html" style="height: 48px; display: flex; align-items: center; justify-content: center; border: 1px solid #e3e3e3; font-weight: 600; border-radius: 3px">Bailey</a>
+<a href="index.html" style="height: 48px; display: flex; align-items: center; justify-content: center; border: 1px solid #e3e3e3; font-weight: 600; border-radius: 3px">Swift</a>
+<a href="index.html" style="height: 48px; display: flex; align-items: center; justify-content: center; border: 1px solid #e3e3e3; font-weight: 600; border-radius: 3px">All brands</a>
+</div>
+</div>
+
+<div style="margin-top: auto; background: #f2f2f2; padding: 24px 16px; font-size: 12px; display: flex; flex-direction: column; gap: 8px">
+<div style="font-weight: 600; color: #343434; text-transform: uppercase">Find us</div>
+<div>Royds House, Royds Mill, Leeds Road, Ossett, West Yorkshire WF5 9YA · Mon to Fri, 8am to 5pm</div>
+<div style="font-size: 11px; margin-top: 8px">Coachman is a trademark of its owner. The Foam People is not affiliated with Coachman.</div>
+</div>
+
+</div>
+</template>
+<div id="app"></div>
+<script src="js/dc-lite.js"></script>
+<script>
+class Component extends DCLogic {
+  constructor(p){ super(p); this.state = { type: 'caravan', range: 'VIP', faq: -1 }; }
+  renderVals() {
+    const B = 'img/';
+    const P = 'https://www.thefoampeople.co.uk/products/';
+    const SH = {
+      rect:{name:'Standard Rectangle',url:P+'standard-rectangle',price:'£159.99'},
+      dome:{name:'Dome End / Island Bed',url:P+'dome-end',price:'£169.99'},
+      flat:{name:'Dome with Flat End',url:P+'dome-with-flat-end',price:'£169.99'},
+      corner:{name:'One Side Corner Cut off',url:P+'one-side-corner-cut-off',price:'£169.99'},
+      topper:{name:'Custom lounge topper',url:'https://www.thefoampeople.co.uk/collections/bespoke-caravan-and-campervan-toppers',price:''}
+    };
+    const BED = {
+      island:['Fixed island bed','dome','Rounded foot. Lifts on struts, so consider a split.'],
+      rearIsland:['Rear island bed','dome','Rounded foot. Lifts on struts, so consider a split.'],
+      trans:['Transverse island bed','flat','Headboard on the side wall, rounded foot corners.'],
+      twin:['Fixed twin single beds','rect','Order two, one per bed.'],
+      corner:['Fixed corner double','corner','One corner angled off by the washroom.'],
+      lounge:['Front lounge make-up bed','topper','A topper over the lounge cushions.']
+    };
+    const RANGES = [
+      {name:'Acadia',type:'caravan',img:B+'efc7fa5264cc43b4cf5899030b547691',pos:'center 60%'},
+      {name:'VIP',type:'caravan',img:B+'c0432a305c98a0bd220421a21a0d0203',pos:'center 62%'},
+      {name:'Laser',type:'caravan',img:B+'c93481eda334ef86faa41a533ee60145',pos:'center 62%'},
+      {name:'Lusso',type:'caravan',img:B+'7342432a492509bcfbd82c8d807d2794',pos:'center 62%'},
+      {name:'Avventura',type:'motorhome',img:B+'7f4c2359f5e27de60dea34426a259029',pos:'center 62%'},
+      {name:'Sportivo',type:'motorhome',img:B+'3f98b066a7d6d33979206f1882404d45',pos:'center 62%'},
+      {name:'Travel Master',type:'motorhome',img:B+'decf40a219c1b678c4b8afa42eefd570',pos:'center 55%'},
+      {name:'Travel Master Imperial',type:'motorhome',img:B+'9996b352acf682311d85485dc5ff067b',pos:'center 62%'}
+    ];
+    const M = [
+      ['Acadia','545 Xtra',4,'trans','8f14b1a88713368525fe4ab53bcb1b8e'],['Acadia','575 Xtra',4,'island','666bc0c7a1f4058ce17c1e1a08968825'],['Acadia','655 Xtra',4,'trans','ab38935c6b7dcfac924e697ccb9be040'],['Acadia','660 Xtra',5,'corner','a21cc555a984fbe50609a40754ac3443'],
+      ['VIP','460',2,'lounge','c499a834de00f995c062e60abbbe12ba'],['VIP','520',3,'lounge','d8277922e4eec70539c323e8da982ba5'],['VIP','545',4,'rearIsland','276c0219666a625a8cde0b6a5a0a4c04'],['VIP','565',4,'twin','3b41263cf266b3f70495c81e2a84017a'],['VIP','575',4,'island','42de0cbbfbe99694ed4dded9cc5f9e43'],
+      ['Laser','545 Xtra',4,'rearIsland','3a9f82d70ae89adcb4d2f8e2191ad317'],['Laser','575 Xtra',4,'island','3bd4c500a91e0bb1a8b11a9a14d84bd4'],['Laser','845 Xtra',4,'rearIsland','54d72101b23e87a6d3af9798a42ba06b'],['Laser','855 Xtra',4,'trans','35fc9d16ce31f5859f85a31ec1f63acd'],['Laser','865 Xtra',4,'twin','8e0e02c3f9b8c6b04b7899b2fb483249'],['Laser','875 Xtra',4,'island','b0fd716a74245ac17c2fc95eea88c4e0'],
+      ['Lusso','I',4,'trans','1f0379c43af716c2e6ac2cbdbba19acf'],['Lusso','II',4,'trans','02a93a6740155d5084f18c5fe55cca3f'],['Lusso','III',4,'trans','dc04c50b0c00b9b0f8ed2d8799f731e8'],['Lusso','IV',4,'trans','3bfe03fcf798f64fb40e24867cc62823'],
+      ['Avventura','545',4,'rearIsland','660a409f64df19d611af5518fcc4050b'],['Avventura','565',4,'twin','c3bac6c9dedfb9237ba8dbfe4b24cc06'],['Sportivo','565',2,'twin','5934a9b04dc6a6eac5ff2abe80488ca3'],['Travel Master','545',4,'rearIsland','71a5985c16cba148a62614dea9f37a4a'],['Travel Master','565',4,'twin','11276dd07e189d819c3d9b3ea56fab8b'],['Travel Master Imperial','845',4,'rearIsland','2c2047d8d82adddd9369a65d1dbdf512']
+    ];
+    const s = this.state;
+    const types = [['caravan','Caravans'],['motorhome','Motorhomes']].map(([k,l]) => ({
+      label: l,
+      pick: () => { const f = RANGES.find(r => r.type === k); this.setState({ type: k, range: f.name }); },
+      style: (s.type === k ? 'background: #207fc3; color: #ffffff;' : 'background: transparent; color: #202223;') + ' border: none; min-height: 44px; font-size: 14px; font-weight: 600; border-radius: 3px'
+    }));
+    const ranges = RANGES.filter(r => r.type === s.type).map(r => {
+      const n = M.filter(m => m[0] === r.name).length;
+      return { name: r.name, count: n, pick: () => this.setState({ range: r.name }),
+        style: (s.range === r.name ? 'background: #232323; color: #ffffff; border: 1px solid #232323;' : 'background: #ffffff; color: #202223; border: 1px solid #d4d4d4;') + ' flex: 0 0 auto; min-height: 44px; padding: 0 16px; font-size: 13px; font-weight: 600; border-radius: 3px; white-space: nowrap' };
+    });
+    const cur = RANGES.find(r => r.name === s.range) || RANGES[1];
+    const list = M.filter(m => m[0] === cur.name);
+    const kinds = [...new Set(list.map(m => BED[m[3]][0].toLowerCase()))];
+    const range = Object.assign({}, cur, { summary: list.length + (list.length === 1 ? ' layout · ' : ' layouts · ') + kinds.join(', ') });
+    const models = list.map(m => { const b = BED[m[3]]; const sh = SH[b[1]]; return {
+      name: m[0] + ' ' + m[1], berths: m[2], img: B + m[4], bed: b[0], shape: sh.name, note: b[2], url: b[1] === 'topper' ? sh.url : 'configurator.html',
+      priceLabel: b[1] === 'topper' ? 'Custom toppers' : (b[1] === 'rect' ? 'From, per bed' : 'From'),
+      price: b[1] === 'topper' ? 'Cut to size' : sh.price, cta: b[1] === 'topper' ? 'Shop toppers' : 'Choose & order' }; });
+    const F = [
+      ['Will these fit my older Coachman?','Often, but layouts change between years. Send your model, year or a photo and we confirm the shape before cutting.'],
+      ['My bed lifts up for storage','Choose the hinged / split in two parts option. We split it where your base folds.'],
+      ['How do I measure an island bed?','Longest length, widest width, the straight edges, and where the curve starts. Our team sets the exact cut from that.'],
+      ['Will it fit through the door?','Every mattress arrives rolled and boxed. Unpack it inside and let it recover.'],
+      ['What about the lounge beds?','Front lounges make up from the seat cushions. A custom-cut topper is the simplest upgrade.']
+    ];
+    const faqs = F.map((f,i) => ({ q: f[0], a: f[1], open: s.faq === i, sign: s.faq === i ? '–' : '+', toggle: () => this.setState({ faq: s.faq === i ? -1 : i }) }));
+    return { types, ranges, range, models, faqs };
+  }
+}
+
+DCLite.mount('tpl', 'app', Component);
+</script>
+</body>
+</html>
